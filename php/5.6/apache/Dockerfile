@@ -12,6 +12,6 @@ RUN apt-get update && apt-get install -y \
 	&& docker-php-ext-install gd \
 	&& pecl install xdebug-beta \
 	&& docker-php-ext-enable xdebug \
-	&& pecl install memcached \
-	&& docker-php-ext-enable memcached
+	&& pecl install memcached memcache \
+	&& docker-php-ext-enable memcached memcache
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --filename=composer
