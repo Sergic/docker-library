@@ -11,5 +11,5 @@ RUN \
     unzip typesafe-activator-$ACTIVATOR_VERSION.zip && \
     mkdir /opt/typesafe && \
     mv /tmp/activator-dist-$ACTIVATOR_VERSION /opt/typesafe/activator-$ACTIVATOR_VERSION && \
-    ln -s /opt/typesafe/activator-$ACTIVATOR_VERSION/activator /usr/local/bin/activator && \
+    ln -s /opt/typesafe/activator-$ACTIVATOR_VERSION/bin/activator /usr/local/bin/activator && \
     rm /tmp/typesafe-activator-$ACTIVATOR_VERSION.zip
